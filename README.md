@@ -8,7 +8,7 @@ class My_Info:
     nationality: str = "Spanish"
     languages: List[str] = field(init=False, default_factory=list)
     markup_languages: List[str] = field(init=False, default_factory=list)
-    technologies: Dict[str, List[str]] = field(init=False, default_factory=dict)
+    technologies: Dict[str, List[str | None]] = field(init=False, default_factory=dict)
         
     def __post_init__(self) -> None:
         self.languages = ["Python",
