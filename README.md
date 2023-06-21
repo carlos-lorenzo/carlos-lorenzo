@@ -31,7 +31,8 @@ class My_Info:
 
     def __str__(self) -> str:
         return f"Name: {self.name}\nNationality: {self.nationality}\nDescription: Fullstack developer & Machine learning engineer"
-    
-me = My_Info()
-print(me)
+
+if __name__ == "__main__":   
+    me = My_Info()
+    print(me)
 ```
