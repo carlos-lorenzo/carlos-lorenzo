@@ -26,7 +26,7 @@ class My_Info:
                              "backend": ["Django",
                                          "Flask",
                                          "FastAPI"],
-                             "frontend": ["React]}
+                             "frontend": ["React"]}
 
 
     def __str__(self) -> str:
