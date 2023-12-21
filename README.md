@@ -19,7 +19,8 @@ class My_Info:
         
         self.technologies = {"machine_learning": ["TensorFlow",
                                                   "Keras"
-                                                  "scikit-learn"],
+                                                  "scikit-learn"
+                                                  "PyTorch"],
                              "data_science": ["NumPy",
                                               "Pandas",
                                               "Matplotlib"],
