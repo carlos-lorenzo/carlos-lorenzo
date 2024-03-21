@@ -8,11 +8,12 @@ class My_Info:
     nationality: str = "Spanish"
     languages: List[str] = field(init=False, default_factory=list)
     markup_languages: List[str] = field(init=False, default_factory=list)
-    technologies: Dict[str, List[str | None]] = field(init=False, default_factory=dict)
+    technologies: Dict[str, List[str]] = field(init=False, default_factory=dict)
         
     def __post_init__(self) -> None:
         self.languages = ["Python",
-                          "JavaScript"]
+                          "JavaScript",
+                          "C#"]
         
         self.markup_languages = ["html",
                                  "css"]
@@ -31,7 +32,7 @@ class My_Info:
 
 
     def __str__(self) -> str:
-        return f"Name: {self.name}\nNationality: {self.nationality}\nDescription: Fullstack developer & Machine learning engineer"
+        return f"Name: {self.name}\nNationality: {self.nationality}\nDescription: Fullstack developer & machine learning engineer"
 
 if __name__ == "__main__":   
     me = My_Info()
