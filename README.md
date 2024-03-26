@@ -12,7 +12,7 @@ class My_Info:
         
     def __post_init__(self) -> None:
         self.languages = ["Python",
-                          "JavaScript",
+                          "JavaScript/Typescript",
                           "C#"]
         
         self.markup_languages = ["html",
