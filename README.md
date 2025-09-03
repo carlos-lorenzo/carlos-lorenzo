@@ -13,7 +13,8 @@ class My_Info:
     def __post_init__(self) -> None:
         self.languages = ["Python",
                           "JavaScript/Typescript",
-                          "C#"]
+                          "C#",
+                          "C++"]
         
         self.markup_languages = ["html",
                                  "css"]
@@ -28,7 +29,8 @@ class My_Info:
                              "backend": ["Django",
                                          "Flask",
                                          "FastAPI"],
-                             "frontend": ["React"]}
+                             "frontend": ["React"],
+                             "robotics": ["Arduino"]}
 
 
     def __str__(self) -> str:
