@@ -30,7 +30,8 @@ class My_Info:
                                          "Flask",
                                          "FastAPI"],
                              "frontend": ["React"],
-                             "robotics": ["Arduino"]}
+                             "robotics": ["Arduino"],
+                             "CAD": ["Autodesk Inventor"]}
 
 
     def __str__(self) -> str:
