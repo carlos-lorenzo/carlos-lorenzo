@@ -1,20 +1,19 @@
 ```python
 from dataclasses import dataclass, field
-from typing import List, Dict
 
 @dataclass
-class My_Info:
+class MyInfo:
     name: str = "Carlos"
     nationality: str = "Spanish"
-    languages: List[str] = field(init=False, default_factory=list)
-    markup_languages: List[str] = field(init=False, default_factory=list)
-    technologies: Dict[str, List[str]] = field(init=False, default_factory=dict)
+    languages: list[str] = field(init=False, default_factory=list)
+    markup_languages: list[str] = field(init=False, default_factory=list)
+    technologies: dict[str, list[str]] = field(init=False, default_factory=dict)
         
     def __post_init__(self) -> None:
         self.languages = ["Python",
                           "JavaScript/Typescript",
                           "C#",
-                          "C++"]
+                          "C/C++"]
         
         self.markup_languages = ["html",
                                  "css"]
@@ -38,6 +37,6 @@ class My_Info:
         return f"Name: {self.name}\nNationality: {self.nationality}\nDescription: Fullstack developer & machine learning engineer"
 
 if __name__ == "__main__":   
-    me = My_Info()
+    me = MyInfo()
     print(me)
 ```
