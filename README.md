@@ -11,12 +11,10 @@ class MyInfo:
         
     def __post_init__(self) -> None:
         self.languages = ["Python",
-                          "JavaScript/Typescript",
+                          "Typescript",
                           "C#",
-                          "C/C++"]
+                          "C++"]
         
-        self.markup_languages = ["html",
-                                 "css"]
         
         self.technologies = {"machine_learning": ["TensorFlow",
                                                   "Keras"
